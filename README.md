@@ -1,7 +1,7 @@
 # SRTP
 In this repository, I will introduce my SRTP and some work that may be useful.
 
-My work mainly uses ISAAC SIM. 
+My work mainly uses ISAAC SIM. The outstanding point is Hardware-in-Loop Simulation
 
 
 This repository expands upon the work introduced in [orbbec_competition](https://github.com/EnderMandS/orbbec_competition) by incorporating semi-real physical simulation elements into the project. Building on the original implementation, this project integrates motion capture technology to record the drone’s movement and posture in real time. The captured data is then transmitted via ROS communication to simulate the drone’s actions within NVIDIA’s Isaac Sim environment.
@@ -45,6 +45,17 @@ source devel/setup.bash
 catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
 
+## Hardware-in-Loop Simulation
+In a ROS workspace sourced terminal run:
+
+```shell
+roslaunch isaac_tf run.launch
+```
+
+Open another terminal which opens in the rosbag, and run:
+```shell
+rosbag play data.bag
+```
 
 Additionally , to set up the simulation environment and experience the semi-real simulation system, please refer to the official [Isaac Sim documentation](https://developer.nvidia.com/isaac/sim) for detailed instructions. Additional setup steps specific to this project are documented within the repository.
 
