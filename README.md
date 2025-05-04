@@ -32,8 +32,8 @@ Navigate to the project directory and then run the following lines.
 
 ```shell
 git clone 
-sudo chmod 777 -R orbbec_competition
-cd orbbec_competition
+sudo chmod 777 -R ISAACSIM
+cd ISAACSIM
 source /opt/ros/noetic/setup.sh
 catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release
 ```
