@@ -1,0 +1,9 @@
+/home/demao/srtp/workspace/install/_setup_util.py
+/home/demao/srtp/workspace/install/env.sh
+/home/demao/srtp/workspace/install/setup.bash
+/home/demao/srtp/workspace/install/local_setup.bash
+/home/demao/srtp/workspace/install/setup.sh
+/home/demao/srtp/workspace/install/local_setup.sh
+/home/demao/srtp/workspace/install/setup.zsh
+/home/demao/srtp/workspace/install/local_setup.zsh
+/home/demao/srtp/workspace/install/.rosinstall

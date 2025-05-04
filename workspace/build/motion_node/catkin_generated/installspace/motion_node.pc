@@ -1,0 +1,8 @@
+prefix=/home/demao/srtp/workspace/install
+
+Name: motion_node
+Description: Description of motion_node
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

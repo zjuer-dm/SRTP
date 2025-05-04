@@ -56,6 +56,8 @@ Open another terminal which opens in the rosbag, and run:
 ```shell
 rosbag play data.bag
 ```
+### others
+
 
 Additionally , to set up the simulation environment and experience the semi-real simulation system, please refer to the official [Isaac Sim documentation](https://developer.nvidia.com/isaac/sim) for detailed instructions. Additional setup steps specific to this project are documented within the repository.
 
