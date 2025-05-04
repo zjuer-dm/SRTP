@@ -58,6 +58,7 @@ rosbag play data.bag
 ```
 ### others
 
+In motion_capture, the code can collate the information about motion capture.
 
 Additionally , to set up the simulation environment and experience the semi-real simulation system, please refer to the official [Isaac Sim documentation](https://developer.nvidia.com/isaac/sim) for detailed instructions. Additional setup steps specific to this project are documented within the repository.
 
