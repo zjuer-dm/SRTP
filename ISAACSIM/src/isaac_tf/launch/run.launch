@@ -1,0 +1,15 @@
+<launch>
+  <!-- 使用仿真时间 -->
+  <param name="/use_sim_time" type="bool" value="true" />
+
+  <!-- 静态 TF 发布 -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="world_odom_broadcaster" args="0 0 0 0 0 0 1 world odom"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="odom_base_link" args="0 0 0 0 0 0 odom base_link"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_camera_broadcaster" args="0.0608 0 0.1213 0 0 0 1 base_link camera"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_rgb_broadcaster" args="0.0076121 0.010989 -0.0000076 0 0 0 1 camera camera_rgb"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_left_broadcaster" args="0.0061398 -0.025 0 0 0 0 1 camera camera_left"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_right_broadcaster" args="0.0061398 0.025 -0.0000001 0 0 0 1 camera camera_right"/>
+
+  <!-- 无人机控制节点 -->
+  <node pkg="isaac_tf" type="drone_drive" name="drone_drive" output="screen" />
+</launch>

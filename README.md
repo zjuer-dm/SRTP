@@ -10,12 +10,6 @@ This repository expands upon the work introduced in [orbbec_competition](https:/
 
 The project showcases a unique system that bridges the gap between real-world physical interactions and digital simulation. By leveraging motion capture, the drone’s dynamic movements are accurately mirrored in a virtual environment, offering a robust simulation that is responsive to actual physical inputs.
 
-## Key Features
-
-- **Semi-Real Simulation Integration**: Uses live motion capture data to drive a simulated drone within Isaac Sim, creating a hybrid physical-digital system.
-- **ROS Communication**: Implements ROS for real-time data exchange between the physical drone and the simulation, ensuring synchronization of movements.
-- **Isaac Sim Versions**: Initially developed with Isaac Sim version 4.1.0, with subsequent iterations expanding support to versions 4.2 and 4.5 as the project evolved.
-- **Inspired by Existing Work**: Adapts and builds upon methodologies from the orbbec_competition project to enhance simulation accuracy and operational robustness.
 
 ## Getting Started
 
@@ -24,10 +18,17 @@ The demo program is based on [NVIDIA Isaac Sim](https://developer.nvidia.cn/isaa
 
 Make sure you have Isaac Sim and ROS1 installed.
 
+Replace your ROS distro in the following lines.
+
 ```shell
-source devel/setup.bash
-catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+sudo apt update
+sudo apt install -y ros-noetic-tf ros-noetic-tf2 ros-noetic-tf2-ros ros-noetic-cv-bridge libx264-dev
 ```
+
+### Clone & Build
+
+Navigate to the project directory and then run the following lines.
+
 
 ```shell
 git clone 
@@ -37,5 +38,19 @@ source /opt/ros/noetic/setup.sh
 catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release
 ```
 
+If something is wrong, then you ca use:
+
+```shell
+source devel/setup.bash
+catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+```
+
+
 Additionally , to set up the simulation environment and experience the semi-real simulation system, please refer to the official [Isaac Sim documentation](https://developer.nvidia.com/isaac/sim) for detailed instructions. Additional setup steps specific to this project are documented within the repository.
 
+## Key Features
+
+- **Semi-Real Simulation Integration**: Uses live motion capture data to drive a simulated drone within Isaac Sim, creating a hybrid physical-digital system.
+- **ROS Communication**: Implements ROS for real-time data exchange between the physical drone and the simulation, ensuring synchronization of movements.
+- **Isaac Sim Versions**: Initially developed with Isaac Sim version 4.1.0, with subsequent iterations expanding support to versions 4.2 and 4.5 as the project evolved.
+- **Inspired by Existing Work**: Adapts and builds upon methodologies from the orbbec_competition project to enhance simulation accuracy and operational robustness.

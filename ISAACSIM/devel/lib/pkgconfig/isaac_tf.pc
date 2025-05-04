@@ -1,0 +1,8 @@
+prefix=/home/ls/srtp_wdm/orbbec_competition/devel
+
+Name: isaac_tf
+Description: Description of isaac_tf
+Version: 0.0.0
+Cflags: -I/home/ls/srtp_wdm/orbbec_competition/src/isaac_tf/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs sensor_msgs geometry_msgs drone_msgs tf2_ros tf2 nav_msgs std_srvs

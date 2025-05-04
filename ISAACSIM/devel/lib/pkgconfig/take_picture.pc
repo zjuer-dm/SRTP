@@ -1,0 +1,8 @@
+prefix=/home/ls/srtp_wdm/orbbec_competition/devel
+
+Name: take_picture
+Description: Description of take_picture
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cv_bridge roscpp std_srvs sensor_msgs nav_msgs tf

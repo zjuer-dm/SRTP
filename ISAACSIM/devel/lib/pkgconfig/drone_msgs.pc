@@ -1,0 +1,8 @@
+prefix=/home/ls/srtp_wdm/orbbec_competition/devel
+
+Name: drone_msgs
+Description: Description of drone_msgs
+Version: 0.0.0
+Cflags: -I/home/ls/srtp_wdm/orbbec_competition/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_generation roscpp rospy std_msgs geometry_msgs
