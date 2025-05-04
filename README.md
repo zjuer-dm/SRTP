@@ -24,7 +24,18 @@ The demo program is based on [NVIDIA Isaac Sim](https://developer.nvidia.cn/isaa
 
 Make sure you have Isaac Sim and ROS1 installed.
 
+```shell
+source devel/setup.bash
+catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+```
 
+```shell
+git clone 
+sudo chmod 777 -R orbbec_competition
+cd orbbec_competition
+source /opt/ros/noetic/setup.sh
+catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release
+```
 
 Additionally , to set up the simulation environment and experience the semi-real simulation system, please refer to the official [Isaac Sim documentation](https://developer.nvidia.com/isaac/sim) for detailed instructions. Additional setup steps specific to this project are documented within the repository.
 
