@@ -1,4 +1,4 @@
-# SRTP
+# UAV-HIL
 In this repository, I will introduce my SRTP and some work that may be useful.
 
 My work mainly uses ISAAC SIM. The outstanding point is Hardware-in-Loop Simulation
@@ -38,7 +38,7 @@ source /opt/ros/noetic/setup.sh
 catkin_make -DCATKIN_WHITELIST_PACKAGES="" -DCMAKE_BUILD_TYPE=Release
 ```
 
-If something is wrong, then you ca use:
+If something is wrong, then you can use:
 
 ```shell
 source devel/setup.bash
